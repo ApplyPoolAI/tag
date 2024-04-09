@@ -1,0 +1,74 @@
+
+.LinkEffect {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    color: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  
+  .LinkEffect .text {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .LinkEffect .icon {
+    position: relative;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .LinkEffect .text span {
+    padding: 0px;
+    transition: all 0.5s ease;
+  }
+  
+  .LinkEffect .icon span {
+    flex: 1;
+    display: flex;
+    padding: 0.3em;
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+  
+  .LinkEffect .icon span img {
+    display: block;
+    width: 1ch;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  
+  .LinkEffect .text > *:nth-child(2) {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform: translate(0%, 100%);
+  }
+  
+  .LinkEffect .icon > *:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+  }
+  
+  .LinkEffect:hover .text > *:nth-child(1) {
+    transform: translate(0%, -100%);
+  }
+  
+  .LinkEffect:hover .icon > *:nth-child(1) {
+    transform: translate(100%, -100%);
+  }
+  
+  .LinkEffect:hover .text > *:nth-child(2) {
+    transform: translate(0%, 0%);
+  }
+  
+  .LinkEffect:hover .icon > *:nth-child(2) {
+    transform: translate(0%, 0%);
+  }
+  

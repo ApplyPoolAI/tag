@@ -1,0 +1,83 @@
+export const DetailData = [
+  {
+    heading: "ApplyPool.ai",
+    detail: [
+      "Have a conversation with our AI",
+      "This is converted to a single profile",
+      "Your mentors peers help perfect it",
+      "Universities and employers contact you",
+      "So you can focus on your studies",
+      "Now more stress or uncertainty!",
+    ],
+    img: "./platforms/applypool.png",
+  },
+  {
+    heading: "Apply for Internships.com",
+    detail: [
+      "Get overseas employment ready",
+      "Build your professional network",
+      "Global opportunities to suit you",
+      "Maximize your income potential",
+      "High success rates for employment",
+    ],
+    img: "./platforms/applyforinternship.png",
+  },
+  {
+    heading: "Apply for University.com",
+    detail: [
+      "Connect with current university students",
+      "That have the same background as you",
+      "Clear all doubts with them",
+      "Use them to enhance your application",
+      "Build your university student network in advance",
+    ],
+    img: "./platforms/applyforuniversity.png",
+  },
+  {
+    heading: "Apply for Medicine.com",
+    detail: [
+      "Connect with medical students",
+      "Improve your chances of admission",
+      "Boost your confidence & grades",
+      "Be well prepared before enrolment",
+      "Build your medical student network in advance",
+    ],
+    img: "./platforms/applyformedicine.png",
+  },
+  {
+    heading: "ApplyPal.io",
+    detail: [
+      "Connect with existing students",
+      "Get an authentic insight",
+      "Peer-to-peer application",
+      "Specifically for that institution",
+    ],
+    img: "./platforms/applypal.png",
+  },
+];
+
+export const ImgData = [
+  {
+    img: "./platforms/applypool.png",
+    src:"https://applypool.ai/"
+  },
+  {
+    img: "./platforms/applyforinternship.png",
+    src:"https://applyforinternship.com/"
+
+  },
+  {
+    img: "./platforms/applyforuniversity.png",
+    src:"https://applyforuniversity.com/"
+  },
+  {
+    img: "./platforms/applyformedicine.png",
+    src:"https://applyformedicine.com/"
+
+  },
+  {
+    img: "./platforms/applypal.png",
+    src:"https://applypal.ai/"
+
+  },
+];
