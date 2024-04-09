@@ -60,4 +60,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
   );
 });
 
+Head.displayName = 'Head';
+
+
 export default Head;
