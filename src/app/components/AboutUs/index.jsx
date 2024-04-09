@@ -91,7 +91,7 @@ export default function AboutUs() {
         </div>
 
         {/* detail */}
-        <div className="flex items-end flex-col-reverse sm:flex-row  gap-10 sm:gap-0">
+        <div className="flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-10 sm:gap-0">
         <div className="sm:w-[60%]">
         <div className="h-20 sm:h-44 m14:h-64 w-fit 2xl:mb-16">
             <img

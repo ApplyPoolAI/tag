@@ -70,3 +70,8 @@ body {
       opacity: 0;
   }
 }
+
+
+img{
+  object-fit: contain;
+}
