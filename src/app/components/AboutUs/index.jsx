@@ -92,24 +92,26 @@ export default function AboutUs() {
 
         {/* detail */}
         <div className="flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-10 sm:gap-0">
-        <div className="sm:w-[60%]">
-        <div className="h-20 sm:h-44 m14:h-64 w-fit 2xl:mb-16">
+        <div className="sm:w-[50%] m14:w-[60%]">
+        <div className="h-20 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
             <img
               ref={stericRef}
-              src="./a.png"
+              src="./rotate.png"
               className="w-full h-full"
               alt="steric"
             />
           </div>
           <p className="mt-6 text-base sm:text-xl max-w-[40ch]">
-          We flip the process, putting you in control.
+          <b>We flip the process, putting you in control.</b>
           </p>
         </div>
-        <div className="sm:w-[40%]">
+        <div className="sm:w-[50%] m14:w-[40%]">
           <p className="mb-4 text-base sm:text-xl max-w-[40ch]">
           25,000 universities, 10,000 potential employers in over 150 countries but <b>only one is right for you</b>. Now you can use the wisdom of mentors <b>together</b> with AI to help them find you.
           </p>
-          <Button theme={"light"}>Join for free</Button>
+          <a href="https://applypool.ai/" target="_blank">
+        <Button theme={"light"}>Join for free</Button>
+        </a>
         </div>
       </div>
 

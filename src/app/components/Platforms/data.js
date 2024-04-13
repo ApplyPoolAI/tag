@@ -12,7 +12,7 @@ export const DetailData = [
     img: "./platforms/applypool.png",
   },
   {
-    heading: "Apply for Internships.com",
+    heading: "ApplyforInternships.com",
     detail: [
       "Get overseas employment ready",
       "Build your professional network",
@@ -23,7 +23,7 @@ export const DetailData = [
     img: "./platforms/applyforinternship.png",
   },
   {
-    heading: "Apply for University.com",
+    heading: "ApplyforUniversity.com",
     detail: [
       "Connect with current university students",
       "That have the same background as you",
@@ -34,7 +34,7 @@ export const DetailData = [
     img: "./platforms/applyforuniversity.png",
   },
   {
-    heading: "Apply for Medicine.com",
+    heading: "ApplyforMedicine.com",
     detail: [
       "Connect with medical students",
       "Improve your chances of admission",

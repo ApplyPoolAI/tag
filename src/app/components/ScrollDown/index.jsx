@@ -47,7 +47,7 @@ export default function ScrollDown({theme}) {
           />
         <circle ref={ScrollerRef} cx="20" cy="54" r="12"  fill={theme === "dark" ? "#C80815" : "#131E42"} />
       </svg>
-      <div className="leading-tight text-sm sm:text-lg">
+      <div className="leading-tight text-sm sm:text-base m14:text-lg">
         <p className="font-bold">Scroll down</p>
         <p className="opacity-70">To discover more</p>
       </div>

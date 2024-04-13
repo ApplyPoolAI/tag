@@ -58,12 +58,12 @@ export default function Marquee({ children, direction, speed, ...props }) {
   }, []);
 
   return (
-    <div className="w-[8ch] overflow-hidden inline-block rounded-full text-light box-border leading-none align-bottom bg-sec">
+    <div className="w-[8ch] overflow-hidden inline-block rounded-full text-light box-border leading-snug align-middle bg-sec">
       <div ref={marquee} className="w-fit h-fit relative whitespace-nowrap">
-        <div  ref={first} className=" w-fit h-fit pl-8 pt-3">
+        <div  ref={first} className=" w-fit h-fit pl-8">
           {children}
         </div>
-        <div ref={second} className="  w-fit h-fit absolute top-0 pl-8 pt-3">
+        <div ref={second} className="  w-fit h-fit absolute top-0 pl-8">
           {children}
         </div>
       </div>

@@ -109,8 +109,8 @@ export default function Footer() {
         </div>
 
         <div className="text-3xl sm:text-[3.5vw] leading-none">
-            <Marquee direction={"left"} speed={0.1} />
-            <Marquee direction={"right"} speed={0.1} />
+            <Marquee direction={"left"} speed={0.2} />
+            <Marquee direction={"right"} speed={0.2} />
         </div>
       </div>
 

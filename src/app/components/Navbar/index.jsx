@@ -39,7 +39,7 @@ export default function Navbar({ theme }) {
     <nav
       className={`${
         theme === "dark" ? "text-white" : "text-black "
-      } w-full relative top-0 left-0 flex items-center h-fit py-8 justify-between font-Satoshi whitespace-nowrap px-5 sm:px-0`}
+      } w-full relative top-0 left-0 flex items-center h-fit py-[1.5vw] justify-between font-Satoshi whitespace-nowrap px-5 sm:px-0`}
     >
       <div>
         <a href="/">

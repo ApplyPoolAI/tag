@@ -44,9 +44,6 @@ export default function FooterContent() {
               <img className="h-8" src="./whatsapp.png" alt="" />
             </a>
             <a href="/">
-              <img className="h-8" src="./24tag.png" alt="" />
-            </a>
-            <a href="/">
               <img className="h-8" src="./uk.png" alt="" />
             </a>
           </div>
@@ -55,7 +52,9 @@ export default function FooterContent() {
       </div>
 
       <div className="flex flex-col sm:flex-row sm:justify-between gap-5 items-start sm:items-center">
+        <a href="https://applypool.ai/" target="_blank">
         <Button theme={"light"}>Join for free</Button>
+        </a>
 
         <div className="flex gap-2 items-center ml-auto sm:ml-0">
           <p className="text-xl font-normal text-gray-400">
