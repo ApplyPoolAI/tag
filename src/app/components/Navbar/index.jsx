@@ -45,8 +45,8 @@ export default function Navbar({ theme }) {
         <a href="/" className="group flex relative">
           <img src={logo} alt="" className="relative z-20 h-10 sm:h-14 " />
           <span className="top-1/2 -translate-y-1/2 block absolute z-10 left-0 -translate-x-1/2">
-            <span className="block group-hover:translate-x-[calc(100%+10px)] sm:group-hover:translate-x-[calc(100%+20px)] transition-all duration-500 text-2xl font-bold text-main">The Apply Group</span>
-            <span className="bg-white absolute left-0 top-0 right-0 bottom-0"></span>
+            <span className={`block group-hover:translate-x-[calc(100%+10px)] sm:group-hover:translate-x-[calc(100%+20px)] transition-all duration-500 text-2xl font-bold ${theme === "dark" ? "text-white" : "text-main "}`}>The Apply Group</span>
+            <span className={`${theme === "dark" ? "bg-main" : "bg-light "} absolute left-0 top-0 right-0 bottom-0`}></span>
           </span>
         </a>
       </div>

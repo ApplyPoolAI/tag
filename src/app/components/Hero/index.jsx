@@ -72,25 +72,25 @@ export default function Hero() {
   return (
     <section
       ref={heroSec}
-      className="heroSection w-full relative overflow-hidden sm:px-16 2xl:px-16 bg-light"
+      className="heroSection w-full relative overflow-hidden sm:px-16 2xl:px-16 bg-main"
     >
       <div
         ref={hero}
         className="hero w-full h-full
-      flex flex-col text-main"
+      flex flex-col text-light"
       >
-        <Navbar theme="light" />
-        <Head z={0} theme="light" ref={circle} />
+        <Navbar theme="dark" />
+        <Head z={0} theme="dark" ref={circle} />
       </div>
 
       <div
         ref={heroBg}
         style={{ clipPath: "circle(0% at 50% 50%)" }}
         className="heroBg w-full h-full
-        flex flex-col text-white bg-main absolute top-0 left-0 sm:px-16"
+        flex flex-col text-main bg-light absolute top-0 left-0 sm:px-16"
       >
-        <Navbar theme="dark" />
-        <Head z={20} theme="dark" ref={circleBg} />
+        <Navbar theme="light" />
+        <Head z={20} theme="light" ref={circleBg} />
       </div>
     </section>
   );

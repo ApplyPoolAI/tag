@@ -66,7 +66,7 @@ function Opportunity({ pos, head, sub, loc, img }) {
 export default function Globe({ theme }) {
 
   return (
-    <div className={`text-main  my-16 sm:my-2 pt-32 pb-5 sm:pt-32 sm:pb-32 relative ${theme === "light" && ''}`}>
+    <div className={`overflow-hidden w-full text-main  my-16 mb-0 sm:my-2 pt-32 pb-16 sm:pt-32 sm:pb-32 relative ${theme === "light" && ''}`}>
 
       {/* heading with shadow */}
       <div className="px-5 sm:px-0 h-1/3 w-full z-10 absolute top-0 sm:top-24 left-0 flex flex-col items-center gap-3 sm:gap-6 pt-4 sm:pt-32 text-center" style={{ background: `linear-gradient(to bottom, #FFFFFF 50%, #FFFFFF80)` }}>
