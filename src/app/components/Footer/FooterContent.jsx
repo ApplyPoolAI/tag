@@ -57,7 +57,7 @@ export default function FooterContent() {
         </a>
 
         <div className="flex gap-2 items-center ml-auto sm:ml-0">
-          <p className="text-xl font-normal text-gray-400">
+          <p className="text-base font-normal text-gray-400">
           ©2024 The Apply Group Ltd.
           </p>
           <a href="/">

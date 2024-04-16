@@ -27,6 +27,10 @@
     transition: all 0.5s ease;
   }
   
+  .LinkEffect .text .sec{
+    color: var(--sec);
+  }
+  
   .LinkEffect .icon span {
     flex: 1;
     display: flex;

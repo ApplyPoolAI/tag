@@ -38,12 +38,16 @@ export default function Navbar({ theme }) {
   return (
     <nav
       className={`${
-        theme === "dark" ? "text-white" : "text-black "
-      } w-full relative top-0 left-0 flex items-center h-fit py-[1.5vw] justify-between font-Satoshi whitespace-nowrap px-5 sm:px-0`}
+        theme === "dark" ? "text-white" : "text-main "
+      } w-full relative top-0 left-0 flex items-center h-fit py-5 sm:py-[1.5vw] justify-between font-Satoshi whitespace-nowrap px-5 sm:px-0`}
     >
       <div>
-        <a href="/">
-          <img src={logo} alt="" className="h-10 sm:h-14" />
+        <a href="/" className="group flex relative">
+          <img src={logo} alt="" className="relative z-20 h-10 sm:h-14 " />
+          <span className="top-1/2 -translate-y-1/2 block absolute z-10 left-0 -translate-x-1/2">
+            <span className="block group-hover:translate-x-[calc(100%+10px)] sm:group-hover:translate-x-[calc(100%+20px)] transition-all duration-500 text-2xl font-bold text-main">The Apply Group</span>
+            <span className="bg-white absolute left-0 top-0 right-0 bottom-0"></span>
+          </span>
         </a>
       </div>
       <div className="flex-1 gap-8 justify-end items-center hidden sm:flex">

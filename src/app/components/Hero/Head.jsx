@@ -11,13 +11,13 @@ const Head = forwardRef(({ theme, z }, ref) => {
     "school • university • scholarship • internship • mentor • tutors • coach • alumni • career • job • peers";
 
   return (
-    <div className="px-5 sm:px-0  h-fit sm:h-[calc(100vh-6rem)] leading-none flex flex-col gap-[2vw] pb-[2vw] m14:pb-[4vw] sm:justify-end ">
+    <div className="px-5 sm:px-0  h-fit sm:h-[calc(100vh-6rem)] leading-none flex flex-col gap-[2vw] pb-[max(50px,2vw)] m14:pb-[4vw] sm:justify-end ">
       {/* main heading */}
 
       <div
         className={clsx(
           theme === "dark" ? "text-light" : "text-main",
-          " font-medium text-[9vw] sm:text-[max(6.2vw,40px)]  leading-normal sm:leading-tight tracking-wide "
+          " font-medium text-[9vw] sm:text-[max(6.2vw,40px)]  leading-normal sm:leading-tight tracking-wide py-[6vh] sm:py-0"
         )}
       >
         Stop Searching
@@ -43,7 +43,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
         ></span>{" "}
       </div>
 
-      <div className="flex items-end flex-col-reverse sm:flex-row  gap-10">
+      <div className="flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-10">
         <div className="sm:w-[50%] m14:w-[60%]">
           <ScrollDown theme={theme} />
         </div>

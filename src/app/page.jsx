@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Platforms from "./components/Platforms";
 import Video from "./components/Video";
 import Footer from "./components/Footer";
+import Globe from "./components/Globe";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
+      <Globe theme="light"/>
       <AboutUs />
       <Platforms />
       <Video />

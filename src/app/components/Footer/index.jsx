@@ -67,7 +67,7 @@ export default function Footer() {
     <section className="w-full h-fit">
       <div
         ref={preFooter}
-        className="w-full min-h-screen relative z-20 overflow-hidden flex flex-col justify-between items-center bg-main text-light rounded-3xl py-5 sm:py-16 origin-bottom"
+        className="w-full min-h-screen relative z-20 overflow-hidden flex flex-col justify-around sm:justify-between items-center bg-main text-light rounded-3xl py-5 sm:py-16 origin-bottom"
       >
         <div>
           <p className="text-2xl sm:text-[3.5vw] font-normal text-center leading-none">
@@ -87,7 +87,7 @@ export default function Footer() {
                   target="_blank"
                   className="rounded-full border border-light flex text-base sm:text-2xl"
                 >
-                  <LinkEffect text={item.label} />
+                  <LinkEffect text={item.label} reddot />
                 </a>
               );
             })}
@@ -101,7 +101,7 @@ export default function Footer() {
                   target="_blank"
                   className="rounded-full border border-light flex text-base sm:text-2xl"
                 >
-                  <LinkEffect text={item.label} />
+                  <LinkEffect text={item.label} reddot />
                 </a>
               );
             })}

@@ -77,11 +77,10 @@ export default function Hero() {
       <div
         ref={hero}
         className="hero w-full h-full
-      flex flex-col text-black"
+      flex flex-col text-main"
       >
         <Navbar theme="light" />
         <Head z={0} theme="light" ref={circle} />
-        <Globe theme="light"/>
       </div>
 
       <div
@@ -92,7 +91,6 @@ export default function Hero() {
       >
         <Navbar theme="dark" />
         <Head z={20} theme="dark" ref={circleBg} />
-        <Globe theme="dark"/>
       </div>
     </section>
   );
