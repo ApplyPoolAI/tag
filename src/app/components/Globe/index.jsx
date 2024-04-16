@@ -119,7 +119,7 @@ export default function Globe({ theme }) {
                 <Avatar pos={"w-[80px] sm:w-[8vw] right-[4%] top-[40%] -translate-y-1/2 translate-x-1/2"} img="./icons/mentors.png" stroke="#C80815" label={"Mentors"} duration={15} />
 
                 {/* Globe Center */}
-                <img src="./globe-center.png" alt="" className="min-w-[80px] bg-light rounded-full relative z-[100]" />
+                <img src="./globe-center.png" alt="" className="min-w-[80px]  rounded-full relative z-[100]" />
               </Circle>
 
             </Circle>
