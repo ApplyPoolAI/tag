@@ -10,12 +10,12 @@ export default function Detail({ active = false, data }) {
       }`}
     >
       <img src="./tag-logo.png" alt="" className="mt-[10vh] sm:mt-0 h-10 sm:h-16 w-fit -ml-2" />
-      <h2 className="text-3xl sm:text-[4vw] leading-none font-medium mb-6 break-words sm:pr-[10%] m14:pr-[15%]">
+      <h2 className="text-2xl sm:text-[3.6vw] leading-none font-medium mb-6 break-words sm:pr-[10%] m14:pr-[15%]">
         {headings[0]}
         <span className="text-sec">.</span>
         {headings[1]}
       </h2>
-      <ul className="text-sm sm:text-xl list-disc list-inside font-medium">
+      <ul className="text-sm sm:text-2xl list-disc ml-4 list-outside font-medium">
         {data.detail.map((item, index) => {
           return <li key={index}>{item}</li>;
         })}

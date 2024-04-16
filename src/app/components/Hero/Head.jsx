@@ -11,7 +11,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
     "school • university • scholarship • internship • mentor • tutors • coach • alumni • career • job • peers";
 
   return (
-    <div className="px-5 sm:px-0  h-fit sm:h-[calc(100vh-6rem)] leading-none flex flex-col gap-[2vw] pb-[max(50px,2vw)] m14:pb-[4vw] sm:justify-end ">
+    <div className="px-5 sm:px-0  h-fit sm:h-[calc(100vh-6rem)] leading-none flex flex-col gap-[6vw] pb-[max(50px,2vw)] m14:pb-[4vw] sm:justify-end ">
       {/* main heading */}
 
       <div
@@ -30,7 +30,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
         <br />
         Get Found by your <br />
         ideal{" "}
-        <Marquee direction={"left"} speed={0.3}>
+        <Marquee direction={"left"} speed={0.4}>
           {list}
         </Marquee>{" "}
         now

@@ -84,7 +84,7 @@ export default function Platforms() {
         ref={workSec}
         className="w-full h-screen box-border overflow-hidden block sm:block relative"
       >
-        <div className="w-full sm:w-fit absolute top-0 left-1/2 -translate-x-1/2 text-main z-50 text-xl sm:text-2xl sm:text-[3vw] font-semibold text-center mt-4 sm:mt-12 py-2 sm:py-6 px-12 bg-[#ffffff60] rounded-full backdrop-blur-md">
+        <div className="w-full sm:w-fit absolute top-0 left-0 sm:left-[50px] text-main z-50 text-xl sm:text-2xl sm:text-[3vw] font-semibold text-center mt-4 sm:mt-12 py-2 sm:py-6 px-12 bg-[#ffffff60] rounded-full backdrop-blur-md">
           Our Unique Platforms
         </div>
 
@@ -93,7 +93,7 @@ export default function Platforms() {
           <div className="h-full text-xl grid grid-cols-1 grid-rows-9 sm:grid-cols-8 sm:grid-rows-3">
 
             {/* Detail */}
-            <div className="flex-1 row-span-5 col-span-1 sm:row-span-3 sm:col-span-4 w-full relative bg-light z-10">
+            <div className="flex-1 row-span-5 col-span-1 sm:row-span-3 sm:col-span-5 w-full relative bg-light z-10">
               <div className="relative h-full w-full flex flex-nowrap flex-row-reverse">
                 {DetailData.map((item, index) => {
                   return (
@@ -108,7 +108,7 @@ export default function Platforms() {
             </div>
 
             {/* images scroller */}
-            <div className="row-span-5 col-span-1 sm:row-span-3 sm:col-span-4 w-full max-h-full box-border h-full">
+            <div className="row-span-5 col-span-1 sm:row-span-3 sm:col-span-3 w-full max-h-full box-border h-full">
               <div ref={imgRef} className="w-full h-full">
                 {ImgData.map((item, index) => {
                   return <Image key={index} item={item} />;

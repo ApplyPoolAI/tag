@@ -10,27 +10,27 @@ export default function FooterContent() {
           <a href="/">
           <img className="h-10 sm:h-16" src="./tag-logo.png" alt="" />
           </a>
-          <p className="text-lg sm:text-2xl font-semibold">
+          <p className="text-lg sm:text-2xl font-normal">
             Stop Searching<span className="text-sec">.</span> Get Found
             <span className="text-sec">.</span>
           </p>
         </div>
         <div className="flex gap-10 sm:gap-24">
           <div className="text-xl font-medium flex flex-col sm:items-end sm:gap-4">
-            <a href="/">
+            <a href="https://www.linkedin.com/company/theapplygroup/" target="_blank">
               <LinkEffect text={"LinkedIn"} big={false} />
             </a>
-            <a href="/">
-              <LinkEffect text={"Instagram"} big={false} />
+            <a href="https://www.tiktok.com/@tagtheapplygroup" target="_blank">
+              <LinkEffect text={"Tiktok"} big={false} />
             </a>
           </div>
 
           <div className="text-xl font-medium flex flex-col sm:items-end sm:gap-4">
-            <a href="/">
+            <a href="https://theapplygroup.com/privacy-policy/" target="_blank">
               <LinkEffect text={"Privacy"} big={false} />
             </a>
-            <a href="/">
-              <LinkEffect text={"Terms"} big={false} />
+            <a href="https://theapplygroup.com/cookies-policy/" target="_blank">
+              <LinkEffect text={"Cookies"} big={false} />
             </a>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function FooterContent() {
         <div>
           <p className="pb-2 text-xl">Reach Us</p>
           <div className="flex gap-4">
-            <a href="/">
+            <a href="https://api.whatsapp.com/send/?phone=447361901027&text&type=phone_number&app_absent=0" target="_blank">
               <img className="h-8" src="./whatsapp.png" alt="" />
             </a>
             <a href="/">

@@ -66,7 +66,7 @@ function Opportunity({ pos, head, sub, loc, img }) {
 export default function Globe({ theme }) {
 
   return (
-    <div className={`text-main overflow-hidden w-full  my-16 sm:my-2 pt-32 pb-5 sm:pt-32 sm:pb-32 relative ${theme === "light" && ''}`}>
+    <div className={`text-main  my-16 sm:my-2 pt-32 pb-5 sm:pt-32 sm:pb-32 relative ${theme === "light" && ''}`}>
 
       {/* heading with shadow */}
       <div className="px-5 sm:px-0 h-1/3 w-full z-10 absolute top-0 sm:top-24 left-0 flex flex-col items-center gap-3 sm:gap-6 pt-4 sm:pt-32 text-center" style={{ background: `linear-gradient(to bottom, #FFFFFF 50%, #FFFFFF80)` }}>
@@ -79,26 +79,37 @@ export default function Globe({ theme }) {
       </div>
 
       {/* bottom shadow */}
-      <div className="h-1/3 w-full z-10 absolute bottom-0 left-0" style={{ background: `linear-gradient(to top, #FFFFFF , #FFFFFF80)` }}></div>
+      <div className="h-1/3 w-full z-10 absolute bottom-0 left-0" style={{ background: `linear-gradient(to top, #FFFFFF10 , #FFFFFF00)` }}></div>
 
       {/* circles */}
-      <div className="overflow-visible w-full h-full flex items-center justify-center pt-16 sm:pt-0">
-        <Circle pos={"p-[60px] sm:p-[5vw] border-[#00000020]"}>
+      <div className="overflow-visible w-full h-full flex items-center justify-center pt-24 sm:pt-0">
+        <Circle pos={"p-[30px] sm:p-[5vw] border-[#00000000]"}>
+        <div className="w-full h-full absolute rotateCenter border border-[#00000010] rounded-full" style={{ animationDuration: "40s" }}>
+              <Dot pos={"right-[20%] top-[90%] -translate-y-1/2 translate-x-1/2"} />
+              <Dot pos={"left-[20%] top-[90%] -translate-y-1/2 -translate-x-1/2"} />
+              
+            
+              
+            </div>
+              
           
           <Circle pos={"p-[25px] sm:p-[10vw] border-[#00000000]"}>
             <div className="w-full h-full absolute rotateCenter border border-[#00000040] rounded-full" style={{ animationDuration: "50s" }}>
               <Dot pos={"right-[20%] top-[90%] -translate-y-1/2 translate-x-1/2"} />
               <Dot pos={"left-[20%] top-[90%] -translate-y-1/2 -translate-x-1/2"} />
+              
+            
+              
             </div>
             <Avatar pos={"w-[75px] sm:w-[8.5vw] left-[3%] top-[32%] -translate-y-1/2 -translate-x-1/2"} img="./icons/medical school.png" stroke="#C80815" label={"Medical School"} duration={5}/>
-            <Avatar pos={"w-[75px] sm:w-[8.5vw] left-[20%] top-[90%] -translate-y-1/2 -translate-x-1/2 opacity-0 sm:opacity-100"} img="./icons/design.png" stroke="#131E42" label={"Design"} />
+            {/* <Avatar pos={"w-[75px] sm:w-[8.5vw] left-[20%] top-[90%] -translate-y-1/2 -translate-x-1/2 opacity-0 sm:opacity-100"} img="./icons/design.png" stroke="#131E42" label={"Design"} /> */}
             <Avatar pos={"w-[75px] sm:w-[8.5vw] right-[5%] top-[25%] -translate-y-1/2 translate-x-1/2"} img="./icons/law school.png" stroke="#131E42" label={"Law School"}  duration={15}/>
 
-            <Opportunity pos={"left-[10%] top-[75%] sm:left-[10%] sm:top-[70%] -translate-y-1/2 -translate-x-1/2"} head="Junior Software Engineer" sub="CybSecure Group" loc="Hybrid - UAE" img="./company1.png" />
+            <Opportunity pos={"left-[20%] top-[75%] sm:left-[10%] sm:top-[70%] -translate-y-1/2 -translate-x-1/2"} head="Junior Software Engineer" sub="CybSecure Group" loc="Hybrid - UAE" img="./company1.png" />
 
-            <Opportunity pos={"right-[10%] top-[110%] sm:right-[20%] sm:top-[95%] -translate-y-1/2 translate-x-1/2"} head="Junior Operations Manager" sub="MegaMeta Inc." loc="Hybrid - New York" img="./company2.png" />
+            <Opportunity pos={"right-[20%] top-[110%] sm:right-[32%] sm:top-[20%] -translate-y-1/2 translate-x-1/2"} head="Junior Operations Manager" sub="MegaMeta Inc." loc="Hybrid - New York" img="./company2.png" />
 
-            <Opportunity pos={"right-[20%] top-[-2%] sm:right-[5%] sm:top-[52%] -translate-y-1/2 translate-x-1/2"} head="12 Month Internship" sub="Hybrid - London " loc="SpaceUp UK" img="./company3.png" />
+            <Opportunity pos={"right-[30%] top-[5%] sm:right-[5%] sm:top-[52%] -translate-y-1/2 translate-x-1/2"} head="12 Month Internship" sub="Hybrid - London " loc="SpaceUp UK" img="./company3.png" />
 
             <Circle pos={"p-[50px] sm:p-[8vw] border-[#ffffff00]"}>
               <div className="w-full h-full absolute rotateCenter border border-[#00000050] rounded-full" style={{ animationDuration: "40s" }}>
