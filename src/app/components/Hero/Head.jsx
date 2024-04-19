@@ -30,7 +30,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
         <br />
         Get Found by your <br />
         ideal{" "}
-        <Marquee direction={"left"} speed={0.4}>
+        <Marquee direction={"left"} speed={0.5}>
           {list}
         </Marquee>{" "}
         now
