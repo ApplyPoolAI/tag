@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Tag",
+  title: "Tag | Stop Searching. Get found.",
   description: "Stop Searching. Get found.",
 };
 

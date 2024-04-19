@@ -63,7 +63,7 @@ export const ImgData = [
   },
   {
     img: "./platforms/applyforinternship.png",
-    src:"https://applyforinternship.com/"
+    src:"https://applyforinternships.com/"
 
   },
   {
