@@ -38,16 +38,16 @@ export default function Navbar({ theme }) {
   return (
     <nav
       className={`${
-        theme === "dark" ? "text-white" : "text-main "
+        theme === "dark" ? "text-white bg-main" : "text-main bg-white"
       } w-full relative top-0 left-0 flex items-center h-fit py-5 sm:py-[1.5vw] justify-between font-Satoshi whitespace-nowrap px-5 sm:px-0`}
     >
       <div>
         <a href="/" className="group flex relative">
-          <img src={logo} alt="" className="relative z-20 h-10 sm:h-14 " />
-          <span className="top-1/2 -translate-y-1/2 block absolute z-10 left-0 -translate-x-1/2">
-            <span className={`block group-hover:translate-x-[calc(100%+10px)] sm:group-hover:translate-x-[calc(100%+20px)] transition-all duration-500 text-2xl font-bold ${theme === "dark" ? "text-white" : "text-main "}`}>The Apply Group</span>
-            <span className={`${theme === "dark" ? "bg-main" : "bg-light "} absolute left-0 top-0 right-0 bottom-0`}></span>
+          <img src={logo} alt="" className={`relative z-20 h-10 sm:h-14`} />
+          <span className="top-1/2 -translate-y-1/2 block absolute z-10 left-full  w-0 group-hover:w-[250px] overflow-hidden transition-all duration-0">
+            <span className={`block -translate-x-full group-hover:translate-x-0 transition-all duration-500 text-base sm:text-2xl ${theme === "dark" ? "text-white" : "text-main "}`}>The Apply Group</span>
           </span>
+            {/* <span className={`${theme === "dark" ? "bg-main" : "bg-light "} absolute z-30 right-full top-0 h-full w-40`}></span> */}
         </a>
       </div>
       <div className="flex-1 gap-8 justify-end items-center hidden sm:flex">
@@ -68,10 +68,11 @@ export default function Navbar({ theme }) {
         })}
       </div>
 
-      <button className="flex sm:hidden text-3xl bg-transparent p-0">
+      <button className={`flex sm:hidden text-3xl bg-transparent p-0 `}>
         <Popup
           handleMenuClick={handleMenuClick}
           isMenu={isMenu}
+          theme={theme}
           navArray={navArray}
         />
       </button>
@@ -79,7 +80,7 @@ export default function Navbar({ theme }) {
       <span
         className={`${
           theme === "dark" ? "" : ""
-        } border-gray-c5 absolute bottom-0 rounded-full left-1/2 -translate-x-1/2 border-b w-full`}
+        } absolute bottom-0 rounded-full left-1/2 -translate-x-1/2 w-full`}
       ></span>
     </nav>
   );

@@ -58,7 +58,7 @@ export default function Hero() {
     ScrollTrigger.create({
       trigger: heroSec.current,
       start: "top top",
-      end: "bottom 60%",
+      end: "+=1000",
       scrub: 1,
       animation: tl,
       // pin:true,

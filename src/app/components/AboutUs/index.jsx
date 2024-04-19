@@ -130,7 +130,7 @@ export default function AboutUs() {
         {/* detail */}
         <div className="flex-grow flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-[20vh] sm:gap-0">
           <div className="sm:w-[50%] m14:w-[60%]">
-            <div className="h-20 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
+            <div className="h-44 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
               <a href="https://applypool.ai/" target="_blank">
                 <img
                   ref={stericRef}

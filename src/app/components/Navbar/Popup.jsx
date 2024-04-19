@@ -1,12 +1,12 @@
 'use client'
 import React from "react";
 
-export default function Popup({ handleMenuClick, isMenu, navArray }) {
+export default function Popup({ handleMenuClick, isMenu, navArray, theme }) {
   return (
     <div className="relative">
         <div onClick={handleMenuClick} className="w-8 h-8 relative z-50">
-            <div className={`absolute left-1/2 -translate-x-1/2 -translate-y-[50%] h-[3px] bg-black transition-all duration-500 ease rounded-lg ${isMenu? 'rotate-45 top-[50%] w-6' : 'top-[35%] w-8'}`}></div>
-            <div className={`absolute left-1/2 -translate-x-1/2 -translate-y-[50%] h-[3px] bg-black transition-all duration-500 ease rounded-lg ${isMenu? '-rotate-45 top-[50%] w-6' : 'top-[65%] w-8'}`}></div>
+            <div className={`absolute left-1/2 -translate-x-1/2 -translate-y-[50%] h-[3px] ${(theme === "dark") && !isMenu ? "bg-light" : "bg-dark "} transition-all duration-500 ease rounded-lg ${isMenu? 'rotate-45 top-[50%] w-6' : 'top-[35%] w-8'}`}></div>
+            <div className={`absolute left-1/2 -translate-x-1/2 -translate-y-[50%] h-[3px] ${(theme === "dark") && !isMenu ? "bg-light" : "bg-dark "} transition-all duration-500 ease rounded-lg ${isMenu? '-rotate-45 top-[50%] w-6' : 'top-[65%] w-8'}`}></div>
         </div>
 
       <div className={`absolute shadow-2xl bg-white rounded-2xl z-40 overflow-hidden transition-all duration-1000 ease top-0 right-0 ${!isMenu?'m-2 w-[0px] h-[0px]':'-m-2 w-[300px] h-[200px]'}`}>
