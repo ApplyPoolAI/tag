@@ -20,7 +20,7 @@ export default function AboutUs() {
     let xposition =
       window.innerWidth > 500
         ? aboutRef.current.offsetWidth - window.innerWidth / 2 + paddingsize
-        : aboutRef.current.offsetWidth + 100;
+        : aboutRef.current.offsetWidth - 40;
 
     //GSAP animation for the horizontal scrolling
     if (true) {
@@ -128,7 +128,7 @@ export default function AboutUs() {
         </div>
 
         {/* detail */}
-        <div className="flex-grow flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-[20vh] sm:gap-0">
+        <div className="flex-grow flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-[15vw] pt-10 sm:gap-0">
           <div className="sm:w-[50%] m14:w-[60%]">
             <div className="h-44 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
               <a href="https://applypool.ai/" target="_blank">
