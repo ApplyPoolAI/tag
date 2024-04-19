@@ -29,7 +29,7 @@ export default function Footer() {
     },
     {
       label: "ApplyforInternships.com",
-      url: "https://applyforinternship.com/",
+      url: "https://applyforinternships.com/",
     },
     {
       label: "ApplyforUniversity.com",
