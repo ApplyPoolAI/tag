@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 const Head = forwardRef(({ theme, z }, ref) => {
   const list =
-    "school • university • scholarship • internship • mentor • tutors • coach • alumni • career • job • peers";
+    "school • university • scholarship • internship • mentor • tutors • coach • alumni • career • job • peers •";
 
   return (
     <div className="px-5 sm:px-0  h-fit sm:h-[calc(100vh-6rem)] leading-none flex flex-col gap-[6vw] pb-[max(50px,2vw)] m14:pb-[4vw] sm:justify-end ">
