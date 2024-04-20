@@ -67,6 +67,7 @@ export default function Footer() {
     <section className="w-full h-fit">
       <div
         ref={preFooter}
+        style={{boxShadow:"5vw -1px 0px 1px #fff, -5vw -1px 0px 1px #fff"}}
         className="w-full min-h-screen relative z-20 overflow-hidden flex flex-col justify-around sm:justify-between items-center bg-main text-light rounded-3xl py-5 sm:py-16 origin-bottom"
       >
         <div>
