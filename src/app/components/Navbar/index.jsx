@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 
-let logo = "./tag-logo.png";
+let logo = "./tag-logo-dark.png";
 
 import Popup from "./Popup";
 import Icon from "./Icon";

@@ -11,8 +11,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Tag | Stop Searching. Get found.",
-  description: "Stop Searching. Get found.",
+  title: "TAG | Stop Searching. Get found.",
+  description: "Stop Searching. Get found by your ideal school, university, scholarship, internship, mentor, tutors, coach, alumni, career, job, peers around the world. ",
 };
 
 export default function RootLayout({ children }) {
