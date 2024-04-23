@@ -23,7 +23,7 @@ export default function AboutUs() {
         : aboutRef.current.offsetWidth - 40;
 
     //GSAP animation for the horizontal scrolling
-    if (true) {
+    if (window.innerWidth > 500) {
       gsap
         .timeline({
           scrollTrigger: {
@@ -79,7 +79,7 @@ export default function AboutUs() {
     >
       <div
         ref={aboutSec}
-        className="heroSection h-screen w-full overflow-hidden relative px-5 sm:px-16 2xl:px-32 py-10 sm:py-12 flex flex-col justify-between"
+        className="heroSection h-fit sm:h-screen w-full overflow-hidden relative px-5 sm:px-16 2xl:px-32 py-2 sm:py-12 flex flex-col justify-between"
       >
         {/* horizontal scroller */}
         <div className="flex pt-5 sm:pt-10">
@@ -88,7 +88,7 @@ export default function AboutUs() {
             className="w-fit text-3xl sm:text-6xl m14:text-[80px] leading-normal flex flex-nowrap"
           >
             <div>
-              <div className="flex whitespace-nowrap flex-nowrap items-center mt-4 2xl:mt-8">
+              <div className="hidden sm:flex whitespace-nowrap flex-nowrap items-center mt-4 2xl:mt-8">
                 <img
                   src="./tag-logo.png"
                   alt=""
@@ -116,21 +116,27 @@ export default function AboutUs() {
                 />
               </div>
 
-              {/* <div className="sm:hidden flex flex-wrap whitespace-wrap items-center mt-4 2xl:mt-8 pb-8">
+              <div className="sm:hidden flex flex-wrap whitespace-wrap items-center mt-4 2xl:mt-8 pb-8">
               <img src="./tag-logo.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
-              Start your <img src="./icons/social science.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
-              journey now <img src="./icons/Medicine.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
-              not when <img src="./icons/mentors.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
-              you enrol. <img src="./icons/design.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
-            </div> */}
+              Allow global 
+              opportunities to
+              reach out to you 
+              24 hours a day.
+              <div className="hidden justify-between mt-4">
+              <img src="./icons/social science.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
+              <img src="./icons/Medicine.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
+              <img src="./icons/mentors.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
+              <img src="./icons/design.png" alt="" className="w-[3ch] inline-block aspect-square object-contain mr-4 sm:mr-10" />
+              </div>
+            </div>
             </div>
           </div>
         </div>
 
         {/* detail */}
-        <div className="flex-grow flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-[15vw] pt-10 sm:gap-0">
+        <div className="flex-grow flex items-start sm:items-end flex-col-reverse sm:flex-row  gap-[15vw] pt-0 sm:pt-10 sm:gap-0">
           <div className="sm:w-[50%] m14:w-[60%]">
-            <div className="h-44 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
+            <div className="h-44 mx-auto sm:mx-0 sm:h-44 m14:h-64 w-fit 2xl:mb-4">
               <a href="https://applypool.ai/" target="_blank">
                 <img
                   ref={stericRef}

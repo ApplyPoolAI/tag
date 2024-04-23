@@ -5,10 +5,10 @@ import { DetailData, ImgData } from "./data.js";
 
 import Detail from "./detail.jsx";
 import Image from "./image.jsx";
-
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import StickyButton from "../StickyButton/index.jsx";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Platforms() {
@@ -22,7 +22,7 @@ export default function Platforms() {
     var tl = gsap.timeline();
 
     if (imgRef.current) {
-      if (window.innerWidth <= 500) {
+      if (false) {
         tl.to(imgRef.current, {
           yPercent: -(100 * (maxSec - 1)),
           ease: "none",
@@ -59,112 +59,208 @@ export default function Platforms() {
           },
         });
       } else {
-        tl.to(imgRef.current.children[0], {
-          yPercent: -5,
-          ease: "none",
-        },"a")
-        .to(imgRef.current.children[0].children, {
-          scale:0.95,
-          opacity:0.9,
-          ease: "none",
-        },"a")
-        .to(imgRef.current.children[1], {
-          yPercent: -100,
-          ease: "none",
-        },"a")//first end
-        .to(imgRef.current.children[0], {
-          yPercent: -10,
-          ease: "none",
-        },"b")
-        .to(imgRef.current.children[0].children, {
-          scale:0.9,
-          opacity:0.8,
-          ease: "none",
-        },"b")
-        .to(imgRef.current.children[1], {
-          yPercent: -105,
-          ease: "none",
-        },"b")
-        .to(imgRef.current.children[1].children, {
-          scale:0.95,
-          opacity:0.9,
-          ease: "none",
-        },"b")
-        .to(imgRef.current.children[2], {
-          yPercent: -200,
-          ease: "none",
-        },"b")//second end
-        .to(imgRef.current.children[0], {
-          yPercent: -15,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[0].children, {
-          scale:0.85,
-          opacity:0.7,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[1], {
-          yPercent: -110,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[1].children, {
-          scale:0.9,
-          opacity:0.8,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[2], {
-          yPercent: -205,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[2].children, {
-          scale:0.95,
-          opacity:0.9,
-          ease: "none",
-        },"c")
-        .to(imgRef.current.children[3], {
-          yPercent: -300,
-          ease: "none",
-        },"c")//third end
-        .to(imgRef.current.children[0], {
-          yPercent: -20,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[0].children, {
-          scale:0.8,
-          opacity:0.6,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[1], {
-          yPercent: -115,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[1].children, {
-          scale:0.85,
-          opacity:0.7,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[2], {
-          yPercent: -210,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[2].children, {
-          scale:0.9,
-          opacity:0.8,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[3], {
-          yPercent: -305,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[3].children, {
-          scale:0.95,
-          opacity:0.9,
-          ease: "none",
-        },"d")
-        .to(imgRef.current.children[4], {
-          yPercent: -400,
-          ease: "none",
-        },"d")
+        tl.to(
+          imgRef.current.children[0],
+          {
+            yPercent: -6,
+            ease: "none",
+          },
+          "a"
+        )
+          .to(
+            imgRef.current.children[0].children,
+            {
+              scale: 0.95,
+              opacity: 0.9,
+              ease: "none",
+            },
+            "a"
+          )
+          .to(
+            imgRef.current.children[1],
+            {
+              yPercent: -100,
+              ease: "none",
+            },
+            "a"
+          ) //first end
+          .to(
+            imgRef.current.children[0],
+            {
+              yPercent: -12,
+              ease: "none",
+            },
+            "b"
+          )
+          .to(
+            imgRef.current.children[0].children,
+            {
+              scale: 0.9,
+              opacity: 0.8,
+              ease: "none",
+            },
+            "b"
+          )
+          .to(
+            imgRef.current.children[1],
+            {
+              yPercent: -106,
+              ease: "none",
+            },
+            "b"
+          )
+          .to(
+            imgRef.current.children[1].children,
+            {
+              scale: 0.95,
+              opacity: 0.9,
+              ease: "none",
+            },
+            "b"
+          )
+          .to(
+            imgRef.current.children[2],
+            {
+              yPercent: -200,
+              ease: "none",
+            },
+            "b"
+          ) //second end
+          .to(
+            imgRef.current.children[0],
+            {
+              yPercent: -18,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[0].children,
+            {
+              scale: 0.85,
+              opacity: 0.7,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[1],
+            {
+              yPercent: -112,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[1].children,
+            {
+              scale: 0.9,
+              opacity: 0.8,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[2],
+            {
+              yPercent: -206,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[2].children,
+            {
+              scale: 0.95,
+              opacity: 0.9,
+              ease: "none",
+            },
+            "c"
+          )
+          .to(
+            imgRef.current.children[3],
+            {
+              yPercent: -300,
+              ease: "none",
+            },
+            "c"
+          ) //third end
+          .to(
+            imgRef.current.children[0],
+            {
+              yPercent: -22,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[0].children,
+            {
+              scale: 0.8,
+              opacity: 0.6,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[1],
+            {
+              yPercent: -118,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[1].children,
+            {
+              scale: 0.85,
+              opacity: 0.7,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[2],
+            {
+              yPercent: -212,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[2].children,
+            {
+              scale: 0.9,
+              opacity: 0.8,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[3],
+            {
+              yPercent: -306,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[3].children,
+            {
+              scale: 0.95,
+              opacity: 0.9,
+              ease: "none",
+            },
+            "d"
+          )
+          .to(
+            imgRef.current.children[4],
+            {
+              yPercent: -400,
+              ease: "none",
+            },
+            "d"
+          );
         //fourth end
 
         ScrollTrigger.create({
@@ -223,7 +319,7 @@ export default function Platforms() {
     <section className="h-fit relative">
       <div
         ref={workSec}
-        className="w-full h-screen box-border overflow-hidden block sm:block relative"
+        className="w-full h-screen box-border overflow-hidden hidden   sm:block relative"
       >
         <div className="w-full sm:w-fit absolute top-0 left-0 sm:left-[50px] text-main z-50 text-xl sm:text-2xl sm:text-[3vw] font-semibold text-center mt-4 sm:mt-12 py-2 sm:py-6 px-12 bg-[#ffffff60] rounded-full backdrop-blur-md">
           Our Unique Platforms
@@ -259,31 +355,44 @@ export default function Platforms() {
         </div>
       </div>
 
-      <div className="w-full h-fit box-border sm:hidden hidden">
-        <div className="h-fit w-full flex flex-col text-white relative">
+      <div className="w-full h-fit box-border sm:hidden block mb-10">
+        <div className="w-full  text-main z-50 text-xl font-semibold text-center mt-10 px-12">
+          Our Unique Platforms
+        </div>
+        <div className="h-fit w-full flex flex-col  relative">
           {DetailData.map((item, index) => {
             return (
               <div
                 key={index}
-                className={`frombelowanim p-5 sm:pl-16 pt-16 flex flex-col justify-start gap-4 sm:gap-8 w-full bg-dark`}
+                className={`frombelowanim p-5 pt-6 flex flex-col justify-start gap-4 sm:gap-8 w-full`}
               >
+                <div className="relative w-full">
+
                 <img
                   src={item.img}
                   alt=""
-                  className="block w-full h-auto object-contain rounded-3xl"
+                  className="block w-full h-auto object-contain"
                 />
-                <h2 className="text-2xl leading-normal font-libre">
-                  {item.heading}
+                <div className="absolute bottom-3 right-16 translate-x-1/2 translate-y-1/2">
+        <a href={item.src} target="_blank">
+        <StickyButton >
+        Join now
+        </StickyButton>
+        </a>
+      </div>
+                </div>
+                <h2 className="text-[5vw] leading-none font-medium mb-2 break-words">
+                  {item.heading.split(".")[0]}
+                  <span className="text-sec">.</span>
+                  {item.heading.split(".")[1]}
                 </h2>
-                <p className="text-base leading-loose font-normalF">
-                  {item.detail}
-                </p>
-                <a
-                  href="/"
-                  className="hidden capitalize font-normalF border border-white px-8 sm:px-12 py-2 sm:py-4 no-underline rounded-full w-fit cursor-pointer"
-                >
-                  learn more
-                </a>
+
+                <ul className="text-base list-disc ml-4 list-outside font-normal">
+                  {item.detail.map((item, index) => {
+                    return <li key={index}>{item}</li>;
+                  })}
+                </ul>
+                
               </div>
             );
           })}

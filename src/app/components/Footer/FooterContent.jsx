@@ -1,6 +1,7 @@
 import React from "react";
 import LinkEffect from "../LinkEffect";
 import Button from "../Button";
+import Link from "next/link";
 
 export default function FooterContent() {
   return (
@@ -26,12 +27,12 @@ export default function FooterContent() {
           </div>
 
           <div className="text-xl font-medium flex flex-col sm:items-end sm:gap-4">
-            <a href="https://theapplygroup.com/privacy-policy/" target="_blank">
+            <Link href="/Privacy" target="_blank">
               <LinkEffect text={"Privacy"} big={false} />
-            </a>
-            <a href="https://theapplygroup.com/cookies-policy/" target="_blank">
+            </Link>
+            <Link href="Cookies" target="_blank">
               <LinkEffect text={"Cookies"} big={false} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

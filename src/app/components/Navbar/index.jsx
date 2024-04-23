@@ -6,7 +6,7 @@ let logo = "./tag-logo-dark.png";
 import Popup from "./Popup";
 import Icon from "./Icon";
 
-export default function Navbar({ theme }) {
+export default function Navbar({ theme, data = null }) {
   const [isActive, setisActive] = useState(0);
   const [isMenu, setIsMenu] = useState(false);
   const navArray = [
@@ -51,7 +51,7 @@ export default function Navbar({ theme }) {
         </a>
       </div>
       <div className="flex-1 gap-8 justify-end items-center hidden sm:flex">
-        {navArray.map((item, index) => {
+        {(data || navArray).map((item, index) => {
           return (
           <a href={item.url} target={item.target} key={index} className="relative">
             <Icon
@@ -73,7 +73,7 @@ export default function Navbar({ theme }) {
           handleMenuClick={handleMenuClick}
           isMenu={isMenu}
           theme={theme}
-          navArray={navArray}
+          navArray={data || navArray}
         />
       </button>
 

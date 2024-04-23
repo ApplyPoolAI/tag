@@ -1,0 +1,41 @@
+.contentPage h1{
+font-size: 36px;
+line-height: 40px;
+font-weight: 700;
+}
+
+.contentPage h2{
+font-size: 36px;
+line-height: 40px;
+font-weight: 600;
+opacity: 0.6;
+font-size: 30px;
+line-height: 36px;
+}
+
+.contentPage ul li,
+.contentPage p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contentPage ul{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.contentPage ul li{
+    padding: 4px 0;
+}
+
+.contentPage ul ul{
+    list-style: circle;
+    padding-left: 40px;
+    list-style-position: inside;
+}
+
+.contentPage a{
+    display: inline;
+    font-weight: 500;
+    color: var(--sec);
+}
