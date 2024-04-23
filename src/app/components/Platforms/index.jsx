@@ -188,7 +188,7 @@ export default function Platforms() {
           .to(
             imgRef.current.children[0],
             {
-              yPercent: -22,
+              yPercent: -23,
               ease: "none",
             },
             "d"
