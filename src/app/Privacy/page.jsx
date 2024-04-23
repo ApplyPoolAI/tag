@@ -39,7 +39,7 @@ export default function Privacy() {
         </p>
         <h2>Introduction</h2>
         <p>
-          This Privacy Notice applies to The Apply Group Ltd's Website(s) as
+          This Privacy Notice applies to The Apply Group {"Ltd's"} Website(s) as
           defined on the Company Terms & Conditions, connecting existing
           university students (Mentors/Tutors) with potential applicants
           (Students/Applicants) and their representatives (inc. parents, legal
@@ -48,7 +48,7 @@ export default function Privacy() {
           referring to:
         </p>
         <p>
-          <b>The Apply Group Ltd.</b> ('TAG') with CRN: 12938105 has its
+          <b>The Apply Group Ltd.</b> {"('TAG')"} with CRN: 12938105 has its
           registered office at: Suite 209, Mayfair Point, 34 South Molton
           Street, London W1K 5RG, United Kingdom.
         </p>
@@ -95,7 +95,7 @@ export default function Privacy() {
         </p>
         <h2>Data Subject</h2>
         <p>
-          In this privacy notice we refer to the data subject as 'you the user'.
+          In this privacy notice we refer to the data subject as {"'you the user'"}.
           A data subject is an identified or identifiable living individual to
           whom personal data relates.
         </p>
@@ -506,8 +506,7 @@ export default function Privacy() {
           of retention periods for different aspects of your personal data.
         </p>
         <p>
-          In some circumstances you can ask us to delete your data: see 'Request
-          Erasure' in Section 10 Your legal rights for further information.
+          In some circumstances you can ask us to delete your data: see {"'Request Erasure'"} in Section 10 Your legal rights for further information.
         </p>
         <p>
           In some circumstances, we may anonymise your personal data (so that it
@@ -563,7 +562,7 @@ export default function Privacy() {
             following scenarios:
           </li>
           <ul>
-            <li>(a) if you want us to establish the data's accuracy;</li>
+            <li>(a) if you want us to establish the {"data's"} accuracy;</li>
             <li>
               (b) where our use of the data is unlawful but you do not want us
               to erase it;
@@ -613,7 +612,7 @@ export default function Privacy() {
         <h2>Time limit to respond</h2>
         <p>We try to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
         <h2>Complaints</h2>
-        <p>You have the right to make a complaint at any time to the Information Commissioner's Office (ICO), the UK supervisory authority for data protection issues <span className="text-sec">(www.ico.org.uk)</span>. We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact Us in the first instance.</p>
+        <p>You have the right to make a complaint at any time to the Information {"Commissioner's"} Office (ICO), the UK supervisory authority for data protection issues <span className="text-sec">(www.ico.org.uk)</span>. We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact Us in the first instance.</p>
       </div>
       <Footer></Footer>
     </section>

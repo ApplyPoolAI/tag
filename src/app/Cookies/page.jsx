@@ -34,13 +34,13 @@ export default function Privacy() {
         <h2>Last updated 10/11/22</h2>
         <p>
           This Cookies Policy must be read by all Users with consideration and
-          agreement in conjunction with The Apply Group Ltd's other Policies and
+          agreement in conjunction with The Apply Group {"Ltd's"} other Policies and
           Terms & Conditions, which will provide context and definitions.
         </p>
         <h2>Introduction</h2>
         <p>
-          This Cookies Policy applies to The Apply Group Ltd's digital platforms
-          'Website(s)', Website(s), as defined in the Company Terms &
+          This Cookies Policy applies to The Apply Group {"Ltd's"} digital platforms
+          {"'Website(s)'"}, Website(s), as defined in the Company Terms &
           Conditions, connecting existing university students (Mentors/Tutors)
           with potential applicants (Students/Applicants) and their
           representatives (inc. parents, legal guardians, schools) as well as
@@ -49,7 +49,7 @@ export default function Privacy() {
         </p>
         <ul>
           <li>
-            The Apply Group Ltd.('TAG') with CRN: 12938105 has its registered
+            The Apply Group Ltd.{"('TAG')"} with CRN: 12938105 has its registered
             office at: Suite 209, Mayfair Point, 34 South Molton Street, London
             W1K 5RG, United Kingdom.
           </li>
@@ -142,16 +142,16 @@ export default function Privacy() {
           each persistent cookie below.
         </p>
         <p>
-          <b>What's the difference between first and third party cookies?</b>
+          <b>{"What's"} the difference between first and third party cookies?</b>
         </p>
         <p>
           First party cookies are cookies that are set by the website that you
-          are visiting and it's only this website that can access and read these
+          are visiting and {"it's"} only this website that can access and read these
           cookies.
         </p>
         <p>
           Third party cookies are set by someone other than the owner of the
-          website you're visiting. As an example, some pages have content from
+          website {"you're"} visiting. As an example, some pages have content from
           other sites like YouTube. YouTube may set their own cookies on your
           browser when you play the video from YouTube. Cookies set by other
           sites and companies (i.e. third parties) can be used to track you on
@@ -160,7 +160,7 @@ export default function Privacy() {
         <p>
           We may engage third parties to assist with maintenance, operation,
           creation or functionality of our website, e.g. analytics providers and
-          content partners. We grant these third partie's access to selected
+          content partners. We grant these third {"partie's"} access to selected
           information to perform specific tasks on our behalf.
         </p>
         <p>
@@ -173,7 +173,7 @@ export default function Privacy() {
           third-party cookies in our Privacy Notice.
         </p>
         <p>
-          We recommend reading the provider's privacy policy which can be found
+          We recommend reading the {"provider's"} privacy policy which can be found
           through links in the tables below, where you can also see which
           cookies on our website are first party cookies and third-party
           cookies.
@@ -211,7 +211,7 @@ export default function Privacy() {
           Necessary cookies are also used for any payment processing.
         </p>
         <p>
-          It's not necessary to accept nor possible to reject the use of
+          {"It's"} not necessary to accept nor possible to reject the use of
           necessary cookies as they are core for the functionality of our
           website.
         </p>
@@ -304,7 +304,7 @@ export default function Privacy() {
           </a>
         </p>
         <p>
-          If you are using any other web browser, please visit your browser's
+          If you are using any other web browser, please visit your {"browser's"}
           official support documents.
         </p>
         <p>
@@ -341,7 +341,7 @@ export default function Privacy() {
           cookies.
         </p>
         <p>
-          It's also possible to instruct your browser to refuse cookies from our
+          {"It's"} also possible to instruct your browser to refuse cookies from our
           website. Most browsers are configured to accept cookies by default,
           but you can update these settings to either refuse cookies altogether,
           or to notify you when a website is trying to set or update a cookie.
@@ -372,7 +372,7 @@ export default function Privacy() {
           <b>Who are we and how can you contact us?</b>
         </p>
         <p>
-          <b>The Apply Group Ltd.</b> ('TAG') with CRN: 12938105 has its
+          <b>The Apply Group Ltd.</b> {"('TAG')"} with CRN: 12938105 has its
           registered office at: Suite 209, Mayfair Point, 34 South Molton
           Street, London W1K 5RG, United Kingdom.
         </p>
