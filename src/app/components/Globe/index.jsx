@@ -163,7 +163,7 @@ export default function Globe({ theme }) {
             />
           </div>
 
-          <Circle pos={"p-[25px] sm:p-[10vw] border-[#00000000]"}>
+          <Circle pos={"p-[25px] sm:p-[8vw] border-[#00000000]"}>
             <div
               className="w-full h-full absolute rotateCenter border border-[#00000040] rounded-full"
               style={{ animationDuration: "50s" }}
@@ -213,7 +213,7 @@ export default function Globe({ theme }) {
 
             <Opportunity
               pos={
-                "right-[20%] top-[110%] sm:right-[32%] sm:top-[20%] -translate-y-1/2 translate-x-1/2"
+                "right-[20%] top-[110%] sm:right-[37%] sm:top-[15%] -translate-y-1/2 translate-x-1/2"
               }
               head="Junior Operations Manager"
               sub="MegaMeta Inc."
@@ -223,7 +223,7 @@ export default function Globe({ theme }) {
 
             <Opportunity
               pos={
-                "right-[30%] top-[5%] sm:right-[5%] sm:top-[52%] -translate-y-1/2 translate-x-1/2"
+                "right-[30%] top-[5%] sm:right-[1%] sm:top-[57%] -translate-y-1/2 translate-x-1/2"
               }
               head="12 Month Internship"
               sub="Hybrid - London "
@@ -231,7 +231,7 @@ export default function Globe({ theme }) {
               img="./company3.png"
             />
 
-            <Circle pos={"p-[50px] sm:p-[8vw] border-[#ffffff00]"}>
+            <Circle pos={"p-[50px] sm:p-[7vw] border-[#ffffff00]"}>
               <div
                 className="w-full h-full absolute rotateCenter border border-[#00000050] rounded-full"
                 style={{ animationDuration: "40s" }}
@@ -257,7 +257,7 @@ export default function Globe({ theme }) {
               />
               <Avatar
                 pos={
-                  "w-[70px] sm:w-[8vw] right-[12%] top-[84%] -translate-y-1/2 translate-x-1/2"
+                  "w-[70px] sm:w-[7vw] right-[12%] top-[84%] -translate-y-1/2 translate-x-1/2"
                 }
                 img="./icons/social science.png"
                 stroke="#131E42"
@@ -266,7 +266,7 @@ export default function Globe({ theme }) {
               />
               <Avatar
                 pos={
-                  "w-[60px] sm:w-[7vw] right-[55%] top-[98%] -translate-y-1/2 translate-x-1/2"
+                  "w-[60px] sm:w-[6vw] right-[55%] top-[98%] -translate-y-1/2 translate-x-1/2"
                 }
                 img="./icons/electrical engineering.png"
                 stroke="#C80815"
@@ -274,7 +274,7 @@ export default function Globe({ theme }) {
                 duration={5}
               />
 
-              <Circle pos={"p-[30px] sm:p-[6vw] border-[#ffffff00]"}>
+              <Circle pos={"p-[30px] sm:p-[3vw] border-[#ffffff00]"}>
                 <div
                   className="w-full h-full absolute rotateCenter border border-[#00000060] rounded-full"
                   style={{ animationDuration: "50s" }}
@@ -293,7 +293,7 @@ export default function Globe({ theme }) {
 
                 <Avatar
                   pos={
-                    "w-[70px] sm:w-[7vw] left-[30%] top-[5%] -translate-y-1/2 -translate-x-1/2"
+                    "w-[70px] sm:w-[7vw] left-[20%] top-[5%] -translate-y-1/2 -translate-x-1/2"
                   }
                   img="./icons/multiple offers.png"
                   stroke="#131E42"
@@ -313,7 +313,7 @@ export default function Globe({ theme }) {
                 <img
                   src="./globe-center.png"
                   alt=""
-                  className="min-w-[80px]  rounded-full relative z-[100]"
+                  className="min-w-[80px] w-[15vw] rounded-full relative z-[100]"
                 />
               </Circle>
             </Circle>

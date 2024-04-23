@@ -22,41 +22,182 @@ export default function Platforms() {
     var tl = gsap.timeline();
 
     if (imgRef.current) {
-      tl.to(imgRef.current, {
-        yPercent: -(100 * (maxSec - 1)),
-        ease: "none",
-      });
+      if (window.innerWidth <= 500) {
+        tl.to(imgRef.current, {
+          yPercent: -(100 * (maxSec - 1)),
+          ease: "none",
+        });
 
-      ScrollTrigger.create({
-        trigger: workSec.current,
-        start: "top top",
-        end: () => `+=${imgRef.current.offsetHeight * 2}`,
-        scrub: true,
-        pin: true,
-        animation: tl,
-        // snap: {
-        //   snapTo: 1 / (imgRef.current.childNodes.length - 1),
-        // },
-        onUpdate: (self) => {
-          let progress = self.progress;
+        ScrollTrigger.create({
+          trigger: workSec.current,
+          start: "top top",
+          end: () => `+=${imgRef.current.offsetHeight * 2}`,
+          scrub: true,
+          pin: true,
+          animation: tl,
+          // snap: {
+          //   snapTo: 1 / (imgRef.current.childNodes.length - 1),
+          // },
+          onUpdate: (self) => {
+            let progress = self.progress;
 
-          if (progress <= 0.15) {
-            setCurrentSec(1);
-          }
-          if (progress > 0.15) {
-            setCurrentSec(2);
-          }
-          if (progress > 0.4) {
-            setCurrentSec(3);
-          }
-          if (progress > 0.6) {
-            setCurrentSec(4);
-          }
-          if (progress > 0.8) {
-            setCurrentSec(5);
-          }
-        },
-      });
+            if (progress <= 0.15) {
+              setCurrentSec(1);
+            }
+            if (progress > 0.15) {
+              setCurrentSec(2);
+            }
+            if (progress > 0.4) {
+              setCurrentSec(3);
+            }
+            if (progress > 0.6) {
+              setCurrentSec(4);
+            }
+            if (progress > 0.8) {
+              setCurrentSec(5);
+            }
+          },
+        });
+      } else {
+        tl.to(imgRef.current.children[0], {
+          yPercent: -5,
+          ease: "none",
+        },"a")
+        .to(imgRef.current.children[0].children, {
+          scale:0.95,
+          opacity:0.9,
+          ease: "none",
+        },"a")
+        .to(imgRef.current.children[1], {
+          yPercent: -100,
+          ease: "none",
+        },"a")//first end
+        .to(imgRef.current.children[0], {
+          yPercent: -10,
+          ease: "none",
+        },"b")
+        .to(imgRef.current.children[0].children, {
+          scale:0.9,
+          opacity:0.8,
+          ease: "none",
+        },"b")
+        .to(imgRef.current.children[1], {
+          yPercent: -105,
+          ease: "none",
+        },"b")
+        .to(imgRef.current.children[1].children, {
+          scale:0.95,
+          opacity:0.9,
+          ease: "none",
+        },"b")
+        .to(imgRef.current.children[2], {
+          yPercent: -200,
+          ease: "none",
+        },"b")//second end
+        .to(imgRef.current.children[0], {
+          yPercent: -15,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[0].children, {
+          scale:0.85,
+          opacity:0.7,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[1], {
+          yPercent: -110,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[1].children, {
+          scale:0.9,
+          opacity:0.8,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[2], {
+          yPercent: -205,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[2].children, {
+          scale:0.95,
+          opacity:0.9,
+          ease: "none",
+        },"c")
+        .to(imgRef.current.children[3], {
+          yPercent: -300,
+          ease: "none",
+        },"c")//third end
+        .to(imgRef.current.children[0], {
+          yPercent: -20,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[0].children, {
+          scale:0.8,
+          opacity:0.6,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[1], {
+          yPercent: -115,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[1].children, {
+          scale:0.85,
+          opacity:0.7,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[2], {
+          yPercent: -210,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[2].children, {
+          scale:0.9,
+          opacity:0.8,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[3], {
+          yPercent: -305,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[3].children, {
+          scale:0.95,
+          opacity:0.9,
+          ease: "none",
+        },"d")
+        .to(imgRef.current.children[4], {
+          yPercent: -400,
+          ease: "none",
+        },"d")
+        //fourth end
+
+        ScrollTrigger.create({
+          trigger: workSec.current,
+          start: "top top",
+          end: () => `+=${imgRef.current.offsetHeight * 4}`,
+          scrub: true,
+          pin: true,
+          animation: tl,
+          // snap: {
+          //   snapTo: 1 / (imgRef.current.childNodes.length - 1),
+          // },
+          onUpdate: (self) => {
+            let progress = self.progress;
+
+            if (progress <= 0.15) {
+              setCurrentSec(1);
+            }
+            if (progress > 0.15) {
+              setCurrentSec(2);
+            }
+            if (progress > 0.45) {
+              setCurrentSec(3);
+            }
+            if (progress > 0.7) {
+              setCurrentSec(4);
+            }
+            if (progress > 0.9) {
+              setCurrentSec(5);
+            }
+          },
+        });
+      }
     }
   }, [workSec, imgRef]);
 
@@ -91,7 +232,6 @@ export default function Platforms() {
         <div className=" heroSection h-screen w-full flex flex-col text-main relative">
           {/* work grid */}
           <div className="h-full text-xl grid grid-cols-1 grid-rows-9 sm:grid-cols-8 sm:grid-rows-3">
-
             {/* Detail */}
             <div className="flex-1 row-span-5 col-span-1 sm:row-span-3 sm:col-span-5 w-full relative bg-light z-10">
               <div className="relative h-full w-full flex flex-nowrap flex-row-reverse">
@@ -115,7 +255,6 @@ export default function Platforms() {
                 })}
               </div>
             </div>
-
           </div>
         </div>
       </div>
