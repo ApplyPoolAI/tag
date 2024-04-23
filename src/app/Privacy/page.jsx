@@ -613,7 +613,7 @@ export default function Privacy() {
         <h2>Time limit to respond</h2>
         <p>We try to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
         <h2>Complaints</h2>
-        <p>You have the right to make a complaint at any time to the Information Commissioner’s Office (ICO), the UK supervisory authority for data protection issues <span className="text-sec">(www.ico.org.uk)</span>. We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact Us in the first instance.</p>
+        <p>You have the right to make a complaint at any time to the Information Commissioner's Office (ICO), the UK supervisory authority for data protection issues <span className="text-sec">(www.ico.org.uk)</span>. We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact Us in the first instance.</p>
       </div>
       <Footer></Footer>
     </section>

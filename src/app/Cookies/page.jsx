@@ -211,7 +211,7 @@ export default function Privacy() {
           Necessary cookies are also used for any payment processing.
         </p>
         <p>
-          It’s not necessary to accept nor possible to reject the use of
+          It's not necessary to accept nor possible to reject the use of
           necessary cookies as they are core for the functionality of our
           website.
         </p>
