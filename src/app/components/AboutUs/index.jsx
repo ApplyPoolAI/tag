@@ -88,7 +88,7 @@ export default function AboutUs() {
             className="w-fit text-3xl sm:text-6xl m14:text-[80px] leading-normal flex flex-nowrap"
           >
             <div>
-              <div className="hidden sm:flex whitespace-nowrap flex-nowrap items-center mt-4 2xl:mt-8">
+              <div className="hidden sm:flex whitespace-nowrap flex-nowrap items-center mt-[10vh]">
                 <img
                   src="./tag-logo.png"
                   alt=""
