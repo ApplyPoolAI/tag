@@ -44,7 +44,7 @@ const Head = forwardRef(({ theme, z }, ref) => {
       </div>
 
       <div className="flex items-start sm:items-end flex-col-reverse sm:flex-row gap-16 sm:gap-10">
-        <div className="sm:w-[50%] m14:w-[60%]">
+        <div className="sm:w-[50%] m14:w-[60%] mb-[64px]">
           <ScrollDown theme={theme} />
         </div>
         <div className="sm:w-[50%] m14:w-[40%]">
