@@ -42,8 +42,8 @@ export default function ScrollDown({theme}) {
           height="73.5"
           rx="19.25"
           stroke={theme === "dark" ? "white" : "black"}
-          stroke-width="1.5"
-          stroke-dasharray="2,2"
+          strokeWidth="1.5"
+          strokeDasharray="2,2"
           />
         <circle ref={ScrollerRef} cx="20" cy="54" r="12"  fill={theme === "dark" ? "#FFFFFF" : "#C80815"} />
       </svg>
