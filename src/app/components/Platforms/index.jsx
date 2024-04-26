@@ -9,6 +9,7 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StickyButton from "../StickyButton/index.jsx";
+import { ADLaM_Display } from "next/font/google/index.js";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Platforms() {
@@ -401,3 +402,5 @@ export default function Platforms() {
     </section>
   );
 }
+
+ 
