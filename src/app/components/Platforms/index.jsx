@@ -379,11 +379,13 @@ export default function Platforms() {
                     </a>
                   </div>
                 </div>
+                <a href={item.src} target="_blank">
                 <h2 className="text-[5vw] leading-none font-medium mb-2 break-words">
                   {item.heading.split(".")[0]}
                   <span className="text-sec">.</span>
                   {item.heading.split(".")[1]}
                 </h2>
+                </a>
 
                 <ul className="text-base list-disc ml-4 list-outside font-normal">
                   {item.detail.map((item, index) => {
