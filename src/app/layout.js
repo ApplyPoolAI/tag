@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       {/* <Head>
       </Head> */}
       <body className={montserrat.className}>
-      <script src="/script.js"></script>
+      <Script src="/script.js"></Script>
         {children}
       </body>
     </html>
