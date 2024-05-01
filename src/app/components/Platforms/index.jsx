@@ -368,32 +368,30 @@ export default function Platforms() {
                 className={`frombelowanim p-5 pt-6 flex flex-col justify-start gap-4 sm:gap-8 w-full`}
               >
                 <div className="relative w-full">
-
-                <img
-                  src={item.img}
-                  alt=""
-                  className="block w-full h-auto object-contain"
-                />
-                <div className="absolute bottom-3 right-16 translate-x-1/2 translate-y-1/2">
-        <a href={item.src} target="_blank">
-        <StickyButton >
-        Join now
-        </StickyButton>
-        </a>
-      </div>
+                  <img
+                    src={item.img}
+                    alt=""
+                    className="block w-full h-auto object-contain"
+                  />
+                  <div className="absolute bottom-3 right-16 translate-x-1/2 translate-y-1/2">
+                    <a href={item.src} target="_blank">
+                      <StickyButton>Join now</StickyButton>
+                    </a>
+                  </div>
                 </div>
+                <a href={item.src} target="_blank">
                 <h2 className="text-[5vw] leading-none font-medium mb-2 break-words">
                   {item.heading.split(".")[0]}
                   <span className="text-sec">.</span>
                   {item.heading.split(".")[1]}
                 </h2>
+                </a>
 
                 <ul className="text-base list-disc ml-4 list-outside font-normal">
                   {item.detail.map((item, index) => {
                     return <li key={index}>{item}</li>;
                   })}
                 </ul>
-                
               </div>
             );
           })}
@@ -402,5 +400,3 @@ export default function Platforms() {
     </section>
   );
 }
-
- 

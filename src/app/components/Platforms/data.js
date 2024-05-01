@@ -1,5 +1,6 @@
 export const DetailData = [
   {
+    src:"https://applypool.ai/",
     heading: "ApplyPool.ai",
     detail: [
       "Have a conversation with our AI",
@@ -12,6 +13,7 @@ export const DetailData = [
     img: "./platforms/applypool.png",
   },
   {
+    src:"https://applyforinternships.com/",
     heading: "ApplyforInternships.com",
     detail: [
       "Get overseas employment ready",
@@ -23,6 +25,7 @@ export const DetailData = [
     img: "./platforms/applyforinternship.png",
   },
   {
+    src:"https://applyforuniversity.com/",
     heading: "ApplyforUniversity.com",
     detail: [
       "Connect with current university students",
@@ -34,6 +37,7 @@ export const DetailData = [
     img: "./platforms/applyforuniversity.png",
   },
   {
+    src:"https://applyformedicine.com/",
     heading: "ApplyforMedicine.com",
     detail: [
       "Connect with medical students",
@@ -45,6 +49,7 @@ export const DetailData = [
     img: "./platforms/applyformedicine.png",
   },
   {
+    src:"https://applypal.ai/",
     heading: "ApplyPal.io",
     detail: [
       "Connect with existing students",
