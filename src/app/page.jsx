@@ -44,6 +44,16 @@ export default function Home() {
       <Globe theme="light"/>
       <AboutUs />
       <Platforms />
+      <section className="h-screen bg-red-300 w-full">
+      <iframe
+        src="https://applypool.ai/"
+        title="Embedded Website"
+        width="100%"
+        height="100%"
+        sandbox="allow-same-origin allow-scripts"
+        allow="fullscreen"
+      ></iframe>
+    </section>
       <Video />
       <Footer />
     </main>
