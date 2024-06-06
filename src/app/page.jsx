@@ -52,7 +52,9 @@ export default function Home() {
         height="100%"
         sandbox="allow-same-origin allow-scripts"
         allow="fullscreen"
-      ></iframe>
+      >
+        
+      </iframe>
     </section>
       <Video />
       <Footer />
