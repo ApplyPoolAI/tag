@@ -1,6 +1,7 @@
 export const DetailData = [
   {
-    src:"https://applypool.ai/",
+    // src:"https://applypool.ai/",
+    src:"/Model",
     heading: "ApplyPool.ai",
     detail: [
       "Have a conversation with our AI",
@@ -64,7 +65,8 @@ export const DetailData = [
 export const ImgData = [
   {
     img: "./platforms/applypool.png",
-    src:"https://applypool.ai/"
+    src:"/Model",
+    // src:"https://applypool.ai/"
   },
   {
     img: "./platforms/applyforinternship.png",
