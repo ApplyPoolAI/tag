@@ -26,16 +26,6 @@ export default function Home() {
     gsap.ticker.lagSmoothing(0);
   }, []);
 
-// useEffect(() => {
-//   // Load and run your script here
-//   const script = document.createElement('script');
-//   script.src = '/script.js';
-//   script.async = true;
-//   document.head.appendChild(script);
-//   return () => {
-//     document.head.removeChild(script);
-//   };
-// }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -44,18 +34,6 @@ export default function Home() {
       <Globe theme="light"/>
       <AboutUs />
       <Platforms />
-      <section className="h-screen bg-red-300 w-full">
-      <iframe
-        src="https://applypool.ai/"
-        title="Embedded Website"
-        width="100%"
-        height="100%"
-        sandbox="allow-same-origin allow-scripts"
-        allow="fullscreen"
-      >
-        
-      </iframe>
-    </section>
       <Video />
       <Footer />
     </main>
