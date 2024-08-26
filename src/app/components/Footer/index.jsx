@@ -21,7 +21,7 @@ export default function Footer() {
     },
     {
       label: "ApplyPal.io",
-      url: "https://applypal.ai/",
+      url: "https://applypal.intfoundationgroup.co.uk/",
     },
     {
       label: "ApplyPool.com",

@@ -50,7 +50,7 @@ export const DetailData = [
     img: "./platforms/applyformedicine.png",
   },
   {
-    src:"https://applypal.ai/",
+    src:"https://applypal.intfoundationgroup.co.uk/",
     heading: "ApplyPal.io",
     detail: [
       "Connect with existing students",
@@ -84,7 +84,7 @@ export const ImgData = [
   },
   {
     img: "./platforms/applypal.png",
-    src:"https://applypal.ai/"
+    src:"https://applypal.intfoundationgroup.co.uk/"
 
   },
 ];

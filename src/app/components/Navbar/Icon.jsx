@@ -13,7 +13,7 @@ export default function Icon({ children, setActive, index, isActive, theme }) {
       <div
         className={`px-4 py-1 cursor-pointer transition-all duration-500 group-hover:scale-75 `}
         onClick={() => {
-          (index>=0) && setActive(index);
+          index >= 0 && setActive(index);
         }}
       >
         {children}
@@ -21,7 +21,7 @@ export default function Icon({ children, setActive, index, isActive, theme }) {
       <div
         className={`bg-sec text-white px-4 py-1 rounded-full cursor-pointer transition-all duration-500 group-hover:top-0 top-[105%] left-1/2 -translate-x-1/2 absolute `}
         onClick={() => {
-          (index>=0) && setActive(index);
+          index >= 0 && setActive(index);
         }}
       >
         {children}
