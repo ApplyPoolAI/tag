@@ -16,8 +16,12 @@ export default function Footer() {
 
   const links = [
     {
+      label: "Whatsapp",
+      url: "https://api.whatsapp.com/send/?phone=447361901027&text&type=phone_number&app_absent=0",
+    },
+    {
       label: "ApplyPool.ai",
-      url: "https://applypool.ai/",
+      url: "",
     },
     {
       label: "ApplyPal.io",
@@ -33,7 +37,7 @@ export default function Footer() {
     },
     {
       label: "ApplyforUniversity.com",
-      url: "https://applyforuniversity.com/",
+      url: "",
     },
     {
       label: "ApplyforMedicine.com",

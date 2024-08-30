@@ -26,7 +26,7 @@ export const DetailData = [
     img: "./platforms/applyforinternship.png",
   },
   {
-    src:"https://applyforuniversity.com/",
+    src:"",
     heading: "ApplyforUniversity.com",
     detail: [
       "Connect with current university students",
@@ -75,7 +75,7 @@ export const ImgData = [
   },
   {
     img: "./platforms/applyforuniversity.png",
-    src:"https://applyforuniversity.com/"
+    src:""
   },
   {
     img: "./platforms/applyformedicine.png",

@@ -51,7 +51,7 @@ export default function Navbar({ theme, data = null }) {
           {/* <span className={`${theme === "dark" ? "bg-main" : "bg-light "} absolute z-30 right-full top-0 h-full w-40`}></span> */}
         </a>
       </div>
-      <div className="flex-1 gap-8 justify-end items-center hidden sm:flex">
+      <div className="flex-1 gap-8 justify-end items-center flex">
         {(data || navArray).map((item, index) => {
           return (
             <a
@@ -68,9 +68,9 @@ export default function Navbar({ theme, data = null }) {
               >
                 {item.label && item.label}
                 {item.icon && (
-                  <div className="h-8 w-8 relative">
+                  <div className="h-6 w-6 sm:h-8 sm:w-8 relative">
                     <img
-                      className="absolute h-8 w-8 object-contain flex-shrink-0"
+                      className="absolute h-6 w-6 sm:h-8 sm:w-8 object-contain flex-shrink-0"
                       src={item.icon}
                       alt="icon"
                     />
@@ -87,7 +87,7 @@ export default function Navbar({ theme, data = null }) {
         })}
       </div>
 
-      <button className={`flex sm:hidden text-3xl bg-transparent p-0 `}>
+      {/* <button className={`flex sm:hidden text-3xl bg-transparent p-0 `}>
         <Popup
           handleMenuClick={handleMenuClick}
           isMenu={isMenu}
@@ -100,7 +100,7 @@ export default function Navbar({ theme, data = null }) {
         className={`${
           theme === "dark" ? "" : ""
         } absolute bottom-0 rounded-full left-1/2 -translate-x-1/2 w-full`}
-      ></span>
+      ></span> */}
     </nav>
   );
 }

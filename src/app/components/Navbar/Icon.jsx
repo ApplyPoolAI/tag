@@ -8,7 +8,7 @@ export default function Icon({ children, setActive, index, isActive, theme }) {
     <div
       className={`
     ${isActive === index ? className : ""} 
-    relative font-medium rounded-full overflow-hidden group text-[1.2vw]`}
+    relative font-medium rounded-full overflow-hidden group text-[max(1.2vw,1rem)]`}
     >
       <div
         className={`px-4 py-1 cursor-pointer transition-all duration-500 group-hover:scale-75 `}
