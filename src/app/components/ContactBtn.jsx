@@ -21,7 +21,7 @@ const ContactBtn = () => {
       </button>
       <Link
         href={
-          "https://api.whatsapp.com/send/?phone=447361901027&text&type=phone_number&app_absent=0"
+          "https://calendly.com/tagmeeting/intro"
         }
         className={` ${
           active === false ? "" : "hidden translate-x-full"
@@ -31,15 +31,15 @@ const ContactBtn = () => {
           className="px-1 py-3 flex justify-center items-center"
           style={{ writingMode: "vertical-lr" }}
         >
-          Request Demo
+          Book Demo
         </span>
-        <Image
+        {/* <Image
           src="./whatsapp.svg"
           alt="icon"
           width={50}
           height={50}
           className="w-7"
-        />
+        /> */}
       </Link>
     </div>
   );
