@@ -9,7 +9,7 @@ const ContactBtn = () => {
 
   return (
     <div
-      className={`z-[100000000] text-white fixed right-0 top-1/2 -translate-y-1/2 flex flex-col overflow-hidden w-10 rounded-[.5rem_0_0_.5rem]`}
+      className={`z-[100000000] bg-main text-white fixed right-0 top-1/2 -translate-y-1/2 flex flex-col overflow-hidden w-10 rounded-[.5rem_0_0_.5rem]`}
     >
       <button
         onClick={() => {
@@ -25,13 +25,13 @@ const ContactBtn = () => {
         }
         className={` ${
           active === false ? "" : "hidden translate-x-full"
-        }  px-2 py-2 bg-green-500 flex flex-col justify-center items-center transition-transform`}
+        }  px-2 py-2 bg-main flex flex-col justify-center items-center transition-transform`}
       >
         <span
           className="px-1 py-3 flex justify-center items-center"
           style={{ writingMode: "vertical-lr" }}
         >
-          contact us
+          Request Demo
         </span>
         <Image
           src="./whatsapp.svg"
