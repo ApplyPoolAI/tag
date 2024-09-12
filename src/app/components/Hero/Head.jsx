@@ -52,17 +52,13 @@ const Head = forwardRef(({ theme, z }, ref) => {
             With just one conversion using the wisdom of your peers{" "}
             <b>combined</b> with the precision of AI
           </p>
-          <a href="https://applypool.ai/" target="_blank">
-        <Button theme={theme}>Join for free</Button>
-        </a>
+          <Button theme={theme}>Join for free</Button>
         </div>
       </div>
-      
     </div>
   );
 });
 
-Head.displayName = 'Head';
-
+Head.displayName = "Head";
 
 export default Head;

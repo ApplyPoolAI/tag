@@ -7,10 +7,11 @@ import Video from "./components/Video";
 import Footer from "./components/Footer";
 import Globe from "./components/Globe";
 import MouseFollower from "./components/MouseFollower";
-
+import ContactBtn from "./components/ContactBtn";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -26,12 +27,12 @@ export default function Home() {
     gsap.ticker.lagSmoothing(0);
   }, []);
 
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <ContactBtn/>
       <MouseFollower />
       <Hero />
-      <Globe theme="light"/>
+      <Globe theme="light" />
       <AboutUs />
       <Platforms />
       <Video />
