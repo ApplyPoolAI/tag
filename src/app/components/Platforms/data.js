@@ -26,7 +26,7 @@ export const DetailData = [
     img: "./platforms/applyforinternship.png",
   },
   {
-    src:"",
+    src:"https://applyforuniversity.com/",
     heading: "ApplyforUniversity.com",
     detail: [
       "Connect with current university students",
@@ -50,7 +50,7 @@ export const DetailData = [
     img: "./platforms/applyformedicine.png",
   },
   {
-    src:"https://applypal.intfoundationgroup.co.uk/",
+    src:"https://www.applypal.io/",
     heading: "ApplyPal.io",
     detail: [
       "Connect with existing students",
@@ -75,7 +75,7 @@ export const ImgData = [
   },
   {
     img: "./platforms/applyforuniversity.png",
-    src:""
+    src:"https://applyforuniversity.com/"
   },
   {
     img: "./platforms/applyformedicine.png",
@@ -84,7 +84,7 @@ export const ImgData = [
   },
   {
     img: "./platforms/applypal.png",
-    src:"https://applypal.intfoundationgroup.co.uk/"
+    src:"https://www.applypal.io/"
 
   },
 ];

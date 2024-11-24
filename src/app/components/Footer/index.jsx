@@ -25,7 +25,7 @@ export default function Footer() {
     },
     {
       label: "ApplyPal.io",
-      url: "https://applypal.intfoundationgroup.co.uk/",
+      url: "https://www.applypal.io/",
     },
     {
       label: "ApplyPool.com",
@@ -37,7 +37,7 @@ export default function Footer() {
     },
     {
       label: "ApplyforUniversity.com",
-      url: "",
+      url: "https://applyforuniversity.com/",
     },
     {
       label: "ApplyforMedicine.com",
